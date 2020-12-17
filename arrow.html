@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>		
+        <style>
+			
+		
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background: url(12.jpg);
+  padding: 85px;  
+  height:90px;
+}
+
+p {
+
+color:#000000;
+   text-align: right; 
+  font-size: 70px;
+  direction: top;
+  align: left;
+} 
+
+.button {
+
+width: 200px;
+height:60px;
+line-height: 50px;
+font-size:25px;
+text-align:center;
+color:black;
+background:#ffffff;
+border:2px solid;
+border-radius:15px;
+}
+
+body {
+	background-color:#EBDDE2;
+  }
+		
+            p { font-family: Helvetica, Arial, Sans-Serif; font-size: 26px; }
+			
+
+
+.buttonarrow {
+
+width: 100px;
+height:100px;
+line-height: 70px;
+font-size:80px;
+text-align:center;
+background:#ffffff;
+border:2px solid;
+border-radius:15px;
+}
+
+
+function moveup() {
+    myGamePiece.speedY -= 1; 
+}
+
+function movedown() {
+    myGamePiece.speedY += 1; 
+}
+
+function moveleft() {
+    myGamePiece.speedX -= 1; 
+}
+
+function moveright() {
+    myGamePiece.speedX += 1; 
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ 
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+			
+        </style>
+    </head>
+	
+	
+ <body>
+	 
+<div class="header">
+</div>
+	
+ 
+		
+<br>	
+<br>	
+<br>	
+<br>	
+
+<div class="grid-container">
+	
+
+<div style="text-align:center;width:480px;" align = "right">
+  <button class="buttonarrow" onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">&#8679;</button><br><br>
+  <button class="buttonarrow" onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">&#8678;</button>
+  <button class="buttonarrow" onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">&#8680;</button><br><br>
+  <button class="buttonarrow" onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">&#8681;</button>
+</div>
+  	
+	
+	
+	
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<form><p>
+<input type="range" id="vol" name="vol1" min="0" max="100"> 
+<label for="vol">محرك1  </label>
+</p>
+<p>
+<input type="range" id="vol" name="vol2" min="0" max="100"> 
+<label for="vol">محرك2  </label>
+</p>
+<p>
+<input type="range" id="vol" name="vol3" min="0" max="100"> 
+<label for="vol">محرك3  </label>
+</p>
+<p>
+<input type="range" id="vol" name="vol4" min="0" max="100">
+<label for="vol">محرك4  </label>
+</p>
+ <p> 
+<input type="range" id="vol" name="vol5" min="0" max="100">
+<label for="vol">محرك5  </label>
+</p>
+<p>
+<input type="range" id="vol" name="vol6" min="0" max="100">
+<label for="vol">محرك6  </label>
+</p>
+<p>
+
+
+<input type="button" class="button" name='play' value="Play" /><br><br>
+<input type="button" class="button" name='save' value="Save" />
+</p>
+</form>
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
